@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8232D5-B804-4766-8840-C88C50EAD01E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBapplication</RootNamespace>
+    <AssemblyName>DBapplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddComment.Designer.cs">
+      <DependentUpon>AddComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRecipeForm.Designer.cs">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInitialWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInitialWindow.Designer.cs">
+      <DependentUpon>AdminInitialWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blog.Designer.cs">
+      <DependentUpon>Blog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calories.Designer.cs">
+      <DependentUpon>Calories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chating.Designer.cs">
+      <DependentUpon>chating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefController.cs" />
+    <Compile Include="chefSignuoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chefSignuoForm.Designer.cs">
+      <DependentUpon>chefSignuoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice_of_UserTypeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice_of_UserTypeWindow.Designer.cs">
+      <DependentUpon>Choice_of_UserTypeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyController.cs" />
+    <Compile Include="CompanyInitialWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyInitialWindow.Designer.cs">
+      <DependentUpon>CompanyInitialWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPendingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyPendingList.Designer.cs">
+      <DependentUpon>CompanyPendingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyProductsForm.Designer.cs">
+      <DependentUpon>CompanyProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanySignUpForm.Designer.cs">
+      <DependentUpon>CompanySignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="DietPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DietPlan.Designer.cs">
+      <DependentUpon>DietPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelloChefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelloChefForm.Designer.cs">
+      <DependentUpon>HelloChefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NutHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NutHome.Designer.cs">
+      <DependentUpon>NutHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NutInfoAdded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NutInfoAdded.Designer.cs">
+      <DependentUpon>NutInfoAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NutritionistController.cs" />
+    <Compile Include="NutritionistPendingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NutritionistPendingList.Designer.cs">
+      <DependentUpon>NutritionistPendingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NutSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NutSignUp.Designer.cs">
+      <DependentUpon>NutSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingChefsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingChefsList.Designer.cs">
+      <DependentUpon>PendingChefsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeView.Designer.cs">
+      <DependentUpon>RecipeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecipeForm.Designer.cs">
+      <DependentUpon>UpdateRecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdminController.cs" />
+    <Compile Include="userController.cs" />
+    <Compile Include="Users1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users1.Designer.cs">
+      <DependentUpon>Users1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSignUpForm.Designer.cs">
+      <DependentUpon>UserSignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationClass.cs" />
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddComment.resx">
+      <DependentUpon>AddComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRecipeForm.resx">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInitialWindow.resx">
+      <DependentUpon>AdminInitialWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blog.resx">
+      <DependentUpon>Blog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calories.resx">
+      <DependentUpon>Calories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chating.resx">
+      <DependentUpon>chating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chefSignuoForm.resx">
+      <DependentUpon>chefSignuoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice_of_UserTypeWindow.resx">
+      <DependentUpon>Choice_of_UserTypeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyInitialWindow.resx">
+      <DependentUpon>CompanyInitialWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyPendingList.resx">
+      <DependentUpon>CompanyPendingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyProductsForm.resx">
+      <DependentUpon>CompanyProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanySignUpForm.resx">
+      <DependentUpon>CompanySignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DietPlan.resx">
+      <DependentUpon>DietPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelloChefForm.resx">
+      <DependentUpon>HelloChefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NutHome.resx">
+      <DependentUpon>NutHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NutInfoAdded.resx">
+      <DependentUpon>NutInfoAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NutritionistPendingList.resx">
+      <DependentUpon>NutritionistPendingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NutSignUp.resx">
+      <DependentUpon>NutSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingChefsList.resx">
+      <DependentUpon>PendingChefsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecipeView.resx">
+      <DependentUpon>RecipeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRecipeForm.resx">
+      <DependentUpon>UpdateRecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users1.resx">
+      <DependentUpon>Users1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSignUpForm.resx">
+      <DependentUpon>UserSignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Heart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Heart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Background Image with title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Background Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Breakfast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Chef_scribbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Chicken_curry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Company_scribbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\default_not_found_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Nutritionist_scribbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Ramen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Ramen2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
