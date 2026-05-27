@@ -1,0 +1,20 @@
+```gitignore id="w3uqnc"
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+```
